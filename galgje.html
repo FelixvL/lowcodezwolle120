@@ -7,10 +7,17 @@
 		console.log(deDOM);
 		var x = document.getElementById("geradenletter").value;
 		var uitkomst = document.getElementById("uitkomstdiv");
+		
+		var plaatje = document.getElementById("hetplaatje");
+		plaatje.onclick = function (){
+			alert();
+		}
+		
 
 		if( x == "f" || x == "i" || x == "e" || x == "t" || x == "s"){
 			uitkomst.innerHTML = "goed";
 			uitkomst.style.backgroundColor = "green";
+//			uitkomst.hidden = true;
 		}else{
 			uitkomst.innerHTML = "fout";
 			uitkomst.style.backgroundColor = "red";
@@ -20,11 +27,14 @@
 			}
 		}
 	}
+	function go(){
+		alert();
+	}
 </script>
 </head>
 <body>
 galgje
-<img src=galgje.jpg >
+<img src=galgje.jpg id=hetplaatje style="display: block;margin-left: auto;margin-right: auto;width: 50%;">
 <br>
 <div>.....</div>
 <input id=geradenletter value=beginnen >
